@@ -1,0 +1,7 @@
+# PR comment voice
+
+How to write a comment you post on a pull request, whether a `tom-review` finding on someone else's PR or a reply to a review on your own. It is public and in your voice, so write it like a colleague leaving a note, not a process printing its output. Your free-hand replies already read human ("good catch, covered in `<sha>`"); the rest has to match that register, or it reads as an automated process.
+
+- **Your voice, clean.** Run `unslop` and the global writing rules over every comment before posting. No em dashes, no colon-connectors. This is the path that drifts most, the analysis voice leaks straight through.
+- **Post the comment, not the conversation.** It is for the PR author, not a transcript of the chat that produced it. Never carry over an aside or instruction you were handed about how to handle it ("just flag it as a nit", "fine to leave for now", "as we discussed"). That is side-channel, strip it before posting.
+- **Lead with the point, mark severity once, then stop.** A one-liner is fine when the point is small, and a genuinely optional one can be a question. A casual "nit:" is real shorthand, keep it, but a "nit" already says it is optional, so do not pad it with "fine to leave for now", "not blocking", or "worth doing later". That reassurance is itself the tell. Keep the evidence and the concrete fix, and skip low-value cosmetics when there are real findings.
