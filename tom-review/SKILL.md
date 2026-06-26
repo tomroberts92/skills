@@ -50,9 +50,12 @@ A fresh subagent can run this review (report-only is the usual mode). It reads t
 
 ## Output
 
-Default: report findings back, grouped by severity, each with the file, the rule it breaks, and the fix. Do not post to the PR.
+Default: report findings back, grouped by severity, each with the file, the rule it breaks, and the fix. Do not post to the PR. The severity buckets and rule labels are for this internal triage view only.
 
-With `--comment`: post the findings as inline PR comments, like `/code-review --comment`. Phrase each as a claim with a fix, no performative nits, and skip low-value cosmetics when there are real findings.
+With `--comment`: post the findings as inline PR comments, like `/code-review --comment`. Write them per `~/.claude/skills/tom-mode/references/pr-comment-voice.md` (your voice, the comment not the conversation, lead with the point and mark severity once). On top of that shared note, two rules are specific to this skill, because only tom-review has a rubric sitting behind the comment:
+
+- **Drop the graded ladder.** The severity buckets and rubric-category tags belong to the internal report, never the posted text. Strip "Should-fix:", "Blocking (verification bar):", "(type discipline)", and the redundant "(non-blocking)" after a nit. Severity rides on the verdict (request-changes vs comment), not a bracket grading every line.
+- **Do not name the rubric.** Say what is wrong in plain terms, never "the kind of thing the standards flag" or "the verification bar".
 
 ## Verdict and approval
 

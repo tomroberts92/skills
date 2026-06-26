@@ -47,6 +47,7 @@ Write the reply clean as you draft it. The cleanup-afterward pass fails, so don'
 - **Terse is not an excuse to drop content.** Be concise, but keep the details, tradeoffs, choices, and open decisions the task calls for.
 - **Frame impact for the consumer and the maintainer.** Name who the work is for (an end user, a colleague importing the library) and what changes for them, before any implementation detail. Then what the next engineer who owns this code inherits. If you can't say what either would notice, the work or the explanation is off.
 - **Never fabricate a link, citation, or reference.** Link only artifacts you produced or read this session.
+- **The artifact is not the conversation.** Anything you post or commit on the user's behalf (a PR comment, a review reply, a commit message, a PR body) carries the content, never the working chat that produced it. No "as we discussed", no instruction you were handed. For PR comments specifically, see `references/pr-comment-voice.md`.
 
 ## Verification
 
